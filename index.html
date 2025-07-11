@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp Bonos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src='https://connect.facebook.net/en_US/fbevents.js';
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script');
+    fbq('init', '1949379688971410');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1949379688971410&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: url('7820.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+    header {
+      text-align: center;
+      color: #c084fc;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .verified img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .verified {
+      text-align: center;
+    }
+
+    .verified h2 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #c084fc;
+    }
+
+    .verified p {
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    .message {
+      background: #2a2a2a;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 14px;
+      margin: 15px 0;
+      text-align: center;
+      max-width: 320px;
+    }
+
+    .whatsapp-button {
+  animation: pulse 2s infinite;
+      background-color: #c084fc;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(127, 0, 255, 0.4);
+    }
+
+    .whatsapp-button i {
+      margin-right: 10px;
+    }
+
+    .clientes {
+      background-color: #2e0357;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 320px;
+      margin-bottom: 15px;
+    }
+
+    .clientes i {
+      margin-right: 10px;
+    }
+
+    .trustpilot {
+      text-align: center;
+      border: 1px dashed #888;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 14px;
+      max-width: 320px;
+      margin-bottom: 70px;
+    }
+
+    .trustpilot img {
+      max-width: 120px;
+      margin-top: 10px;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #c084fc;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    #popup-notificacion {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      left: 20px;
+      background: #2a2a2a;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 14px;
+      z-index: 9999;
+      max-width: 260px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+  
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(127, 0, 255, 0.7);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px 10px rgba(127, 0, 255, 0.1);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(127, 0, 255, 0);
+      }
+    }
+    </style>
+</head>
+<body>
+  <header>WhatsApp Bonos</header>
+
+   <section class="verified">
+    <a href="https://wa.me/5491144184622" target="_blank" onclick="fbq('trackCustom', 'ClickWhatsApp')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" width="50" height="50" />
+    </a>
+    <h2>✅ <b>Plataforma Verificada</b> ✅</h2>
+    <p class="green">Casino de Confianza</p>
+  </section>
+
+  <div class="message">
+    Te estamos conectando con nuestro equipo vía WhatsApp.
+  </div>
+
+  <a class="whatsapp-button pulse" 
+     href="https://wa.me/5491144184622?text=Quiero%20el%20bono%20del%2030%%25" 
+     target="_blank"
+     onclick="fbq('trackCustom', 'ClickWhatsApp')">
+    <i class="fab fa-whatsapp"></i> ¡QUIERO MI BONO!
+  </a>
+
+  <div class="clientes">
+    <i class="fas fa-users"></i> +4.700 CLIENTES GANANDO todos los días
+  </div>
+
+  <div class="trustpilot">
+    "Excelente" ⭐⭐⭐⭐⭐ Calificación 4.9/5 en Trustpilot<br/>
+    <img src="https://logowik.com/content/uploads/images/trustpilot-stars9095.jpg" alt="Trustpilot" />
+  </div>
+
+  <div class="footer">
+    🎁 BONO ACTIVO - ¡Solicítalo ahora por WhatsApp!
+  </div>
+
+  <div id="popup-notificacion">💸 <span id="mensaje-popup"></span></div>
+
+  <script>
+    const nombres = [
+      "Lucía", "Martín", "Camila", "Santiago", "Valentina", "Juan", "Sofía", "Nicolás", "Julieta", "Franco",
+      "Agustina", "Matías", "Rocío", "Facundo", "Antonella", "Lautaro", "Milagros", "Tomás", "Florencia", "Ezequiel",
+      "Abril", "Benjamín", "Mía", "Gonzalo", "Catalina", "Ramiro", "Malena", "Nahuel", "Martina", "Lucas",
+      "Emma", "Bruno", "Renata", "Joaquín", "Josefina", "Pedro", "Luna", "Andrés", "Olivia", "Iván",
+      "Chiara", "Bautista", "Zoe", "Leandro", "Bianca", "Kevin", "Carla", "Dylan", "Margarita", "Ciro"
+    ];
+
+    const ciudades = [
+      "Buenos Aires", "Córdoba", "Rosario", "Mendoza", "La Plata", "Salta", "San Juan", "Neuquén", "Bahía Blanca", "Mar del Plata",
+      "Tucumán", "Santa Fe", "Corrientes", "Posadas", "Río Gallegos", "San Luis", "Formosa", "Resistencia", "Paraná", "Catamarca",
+      "Santiago del Estero", "Concordia", "San Rafael", "Comodoro Rivadavia", "Puerto Madryn", "Villa María", "Goya", "Trelew", "Ushuaia", "Pergamino",
+      "Chivilcoy", "Junín", "Tandil", "Rafaela", "Venado Tuerto", "Olavarría", "Morón", "Avellaneda", "Lanús", "Ituzaingó",
+      "San Isidro", "Tigre", "Pilar", "Merlo", "San Fernando", "Luján", "Villa Gesell", "Pinamar", "Necochea", "Esquel"
+    ];
+
+    function generarMensaje() {
+      const nombre = nombres[Math.floor(Math.random() * nombres.length)];
+      const ciudad = ciudades[Math.floor(Math.random() * ciudades.length)];
+      const monto = Math.floor(Math.random() * (400000 - 20000 + 1)) + 20000;
+      return `${nombre} de ${ciudad} ganó $${monto.toLocaleString('es-AR')} hace unos minutos`;
+    }
+
+    function mostrarPopup() {
+      const popup = document.getElementById('popup-notificacion');
+      const mensaje = document.getElementById('mensaje-popup');
+      mensaje.textContent = generarMensaje();
+      popup.style.display = 'block';
+
+      setInterval(() => {
+        mensaje.textContent = generarMensaje();
+      }, 8000);
+    }
+
+    window.onload = function () {
+      setTimeout(mostrarPopup, 3000);
+    };
+  </script>
+</body>
+</html>
